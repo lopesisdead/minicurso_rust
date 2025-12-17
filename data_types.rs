@@ -1,5 +1,3 @@
-use std::io;
-
 /*
 tipos primitivos de variáveis
 
@@ -17,16 +15,25 @@ usize - pointer-sized unsigned integers
 */
 
 fn main() {
-    println!("Guess the number!");
-    println!("Please input your guess.");
+    // inicializando e declarando variavel generica
+    let variavel = "isso_eh_uma_variavel";
 
-    let mut guess = String::new();
+    // fazendo a uma variavel mutavel
+    let mut variavel_mutavel = "essa var eh mutavel";
 
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
-    
-    let guess: i32 = guess.trim().parse().expect("Please type a number!");
+    // declarando multiplas variaveis
+    let (nome, idade) = ("Matheus", 21);
 
-    println!("You guessed: {guess}");
+    // constante global
+    const CONSTANTE_GLOBAL: i64 = 9;
+    // println!("Testando: {CONSTANTE_GLOBAL}");
+
+    println!("O aluno {nome} tem {idade} anos");
+
+    let mut array = [1, 2, 3];
+    println!("{:?}", array);
+    array[0] = array[1] + array[2];
+    println!("{:?}", array);
+
+
 }
