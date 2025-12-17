@@ -35,5 +35,23 @@ fn main() {
     array[0] = array[1] + array[2];
     println!("{:?}", array);
 
+    // shadowing:
+    // uma variável imutável ainda pode assumir diferentes valores
+    // desde que você nomeie uma variável com o mesmo nome de outra
+    // que já foi declarada anteriormente
+
+    let shadow = 8;
+    println!("{}", shadow);
+    let shadow = shadow + 1;
+    println!("{}", shadow);
+
+    {
+        let shadow = shadow * shadow;
+        println!("{}", shadow);
+
+    }
+
+
+
 
 }
