@@ -1,0 +1,1 @@
+/home/igor/Unioeste/3ano/PES2/cursoRust/minicurso_rust/aula2/commom_collections/vector/target/debug/vector: /home/igor/Unioeste/3ano/PES2/cursoRust/minicurso_rust/aula2/commom_collections/vector/src/main.rs
